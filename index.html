@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Nicolás Sosa</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img class="logo" src="assets/log0.png" height="55" width="auto" /> --> Nicolás Sosa
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-bold text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold text-white" href="#about-us">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold text-white" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold text-white" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Vanta Animation -->
+    <section class="section" id="section-1" style="position: relative;">
+        <span style="position: relative; z-index: 1;"></span>
+        <div class="container h-100" style="position: relative; z-index: 1;"></div>
+        <span style="position: relative; z-index: 1;"></span>
+        <canvas class="vanta-canvas"
+            style="position: absolute; z-index: 0; top: 0px; left: 0px; width: 1366px; height: 485px;" width="1366"
+            height="485"></canvas>
+    </section>
+
+    <script src="three.min.js"></script>
+    <script src="vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#section-1",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xebebeb,
+            color2: 0xebebeb,
+            backgroundColor: 0x121313
+        })
+    </script>
+    <!-- End Vanta Animation -->
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><br><br>El Internet del<br> futuro, hoy</h1>
+                    <p>Vivimos en la era digital: La tecnología avanza a un ritmo nunca antes visto, y puede ser muy
+                        dificil mantenerse al día de todos estos cambios. Por eso es más importante que nunca invertir
+                        en especialistas capacitados para el desarrollo web y de software que necesitas. <br>Aquí es
+                        donde entro yo: ¡Encantado de trabajar juntos!</p>
+                    <button type="button" class="btn btn-dark btn-large" onclick="window.location='#projects'">Mis
+                        proyectos</button>
+                </div>
+                <div class="col img-col">
+                    <img src="assets/hero-img.gif" class="img-fluid" alt="Software Development">
+                </div>
+            </div>
+            <div class="row cards">
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/frontend.png" class="icon" alt="Service One" />
+                            <h5 class="card-title">Front end</h5>
+                            <p class="card-text">Sé cómo enfocar la parte visual de tu sitio web para que sea llamativa
+                                y atractiva.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/backend.png" class="icon" alt="Service Two" />
+                            <h5 class="card-title">Back end</h5>
+                            <p class="card-text">Puedo construir y mantener la estructura de tu sitio, y conectarla a
+                                una base de datos para almacenar información.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/security.png" class="icon" alt="Service Three" />
+                            <h5 class="card-title">Seguridad</h5>
+                            <p class="card-text">Hoy en día la seguridad en la red es muy importante, pero conmigo no
+                                tienes de qué preocuparte.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero section -->
+
+    <!-- About us section -->
+    <section id="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./assets/about-us.jpg" class="img-fluid" alt="About Us">
+                </div>
+                <div class="col text-col">
+                    <h1>Sobre Mí...</h1>
+                    <p>Soy Nicolás Sosa ¡Encantado de conocerte! soy un programador de Mendoza, Argentina; y actualmente
+                        estoy en tercer año de la carrera de Desarrollo de Software.</p>
+                    <p>Mis conocimientos se centran mayormente en el desarrollo de sitios web, pero eso no es todo:
+                        También estoy especializado en trabajar con bases de datos, redes, e incluso desarrollar
+                        programas de escritorio.</p>
+                    <button type="button" class="btn btn-dark btn-large"
+                        onclick="window.location='#contact'">Contáctame</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About us section -->
+
+    <!-- Projects section -->
+    <section id="projects">
+        <div class="container">
+            <div class="row align-items-center projects">
+                <div class="col">
+                    <h1>Mis proyectos</h1>
+                    <p>Aquí hay una demostración de algunos de mis proyectos pasados. Estoy constantemente estudiando nuevas
+                        tecnologías para expandir esta sección.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card mb-3">
+                        <img src="assets/proyecto1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sitio web para gestión de usuarios</h5>
+                            <p class="card-text">Un sitio web conectado a una base de datos de usuarios, usando el
+                                modelo vista-controlador</p>
+                            <p class="card-text"><small class="text-muted">HTML, CSS, Javascript, Bootstrap,
+                                    Springtools, Java</small></p>
+                            <!-- <button type="button" class="btn btn-warning btn-large"
+                                onclick="window.open('https://application.properties/')">Demo</button> -->
+                            <button type="button" class="btn btn-success btn-large"
+                                onclick="window.open('https://github.com/NickSosa/ProyectoProgramacion')">Github</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card mb-3">
+                        <img src="assets/proyecto2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sitio de e-commerce</h5>
+                            <p class="card-text">Diseñado con el fin de vender productos o servicios. Este sitio web fue
+                                desarrollado en equipo.</p>
+                            <p class="card-text"><small class="text-muted">HTML, CSS, Javascript, JPA</small></p>
+                            <button type="button" class="btn btn-warning btn-large"
+                                onclick="window.open('https://calm-faloodeh-3283a3.netlify.app/')">Demo</button>
+                            <button type="button" class="btn btn-success btn-large"
+                                onclick="window.open('https://github.com/ivanSegal/Thaiscript')">Github</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card mb-3">
+                        <img src="assets/proyecto3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarjetas de red social</h5>
+                            <p class="card-text">Una réplica funcional de un elemento visual de Twitter que permite
+                                seguir a un usuario, hecho con React.</p>
+                            <p class="card-text"><small class="text-muted">Vite, React, JSX, HTML, CSS,
+                                    Javascript</small></p>
+                            <button type="button" class="btn btn-warning btn-large"
+                                onclick="window.open('https://nicksosa.github.io/TwitterCardReact/')">Demo</button>
+                            <button type="button" class="btn btn-success btn-large"
+                                onclick="window.open('https://github.com/NickSosa/TwitterCardReact/')">Github</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3">
+                        <img src="assets/proyecto4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculadora</h5>
+                            <p class="card-text">Una aplicación hecha para demostrar código JavaScript. Completamente
+                                funcional. </p>
+                            <p class="card-text"><small class="text-muted">HTML, CSS, Javascript</small></p>
+                            <button type="button" class="btn btn-warning btn-large"
+                                onclick="window.open('https://nicksosa.github.io/calculadora/html/calculator.html')">Demo</button>
+                            <button type="button" class="btn btn-success btn-large"
+                                onclick="window.open('https://github.com/NickSosa/calculadora')">Github</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Projects section -->
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1>Contacto</h1>
+                    <p>
+                        <!-- <img src="assets/facebook.png" onclick="window.open('https://www.facebook.com', '_blank')"
+                            onmouseover="" style="cursor: pointer;" height="50" width="auto">
+                        <img src="assets/twitter.png" onclick="window.open('https://www.twitter.com', '_blank')"
+                            onmouseover="" style="cursor: pointer;" height="50" width="auto"> -->
+                        <img src="assets/gmail.png" onclick="window.open('mailto:Nicojaso@gmail.com', '_blank')"
+                            onmouseover="" style="cursor: pointer;" height="50" width="auto">
+                        <img src="assets/linkedin.webp"
+                            onclick="window.open('https://www.linkedin.com/in/nicol%C3%A1s-javier-sosa-90541930b/', '_blank')"
+                            onmouseover="" style="cursor: pointer;" height="50" width="auto">
+                    </p>
+                    Nicojaso@gmail.com
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact section -->
+</body>
+
+</html>
